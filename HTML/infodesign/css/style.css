@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/*全体*/
+body {
+  background-color: #305692;
+}
+a {
+  color: #fff;
+}
+a:visited {
+  color: #ddd;
+}
+a:hover {
+  color: #eee;
+}
+a:active {
+  color:#ddd;
+}
+
+/*カテゴリの丸とリンクの全体を囲うエリア*/
+.category_outer {
+  width: 400px;
+  padding: 8px;
+}
+/*カテゴリ*/
+.category {
+  display: inline-flex; /* 横並びにする */
+ }
+.category_name {
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  color: #2C4C84;
+  background-color: #CEDDF7;
+  border-radius: 40px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center; /* 縦方向中央揃え（Safari用） */
+  align-items: center; /* 縦方向中央揃え */
+  -webkit-justify-content: center; /* 横方向中央揃え（Safari用） */
+  justify-content: center; /* 横方向中央揃え */
+ }
+ /*リンク*/
+.link {
+  display: inline-flex;
+  padding: 8px 8px 0 8px;
+}
+.favicon {
+
+}
+.link_name {
+  padding: 0 0 8px 0;
+}
