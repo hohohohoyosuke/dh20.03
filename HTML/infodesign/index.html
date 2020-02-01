@@ -8,6 +8,7 @@
 </head>
 <body>
   <div id="wrapper"></div>
+  <style>/*
   <!--この記述をlocalstorageに書く-->
   <div id="editableContent" contenteditable="true" oninput="onInput();">
     <!--カテゴリとリンクをくくる枠-->
@@ -25,12 +26,15 @@
         </div>
       </div>
     </div>
+    <div contenteditable="false">
+      <!--リンクAddボタン-->
+      <div id="addlinkbutton" class="addlinkbutton">Add<br>link</div>
+      <!--カテゴリAddボタン-->
+      <div id="addbutton" class="addbutton">Add<br>Caterogy</div>
+    </div>
   </div>
-  <!--リンクAddボタン-->
-  <div id="addlinkbutton" class="addlinkbutton">Add<br>link</div>
-  <!--カテゴリAddボタン-->
-  <div id="addbutton" class="addbutton">Add<br>Caterogy</div>
   <!--/この記述をlocalstorageに書く-->
+  */</style>
   <script type="text/javascript" src="js/editable.js"></script>
   <script type="text/javascript" src="js/geturl.js"></script>
 </body>

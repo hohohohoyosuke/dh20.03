@@ -22,7 +22,7 @@ document.getElementById("addlinkbutton").addEventListener("click", function() {
   //追加したカテゴリに対してもドラッグアンドドロップできるようにする
   (function(){
 
-    //要素の取得
+    // 要素の取得
     var elements = document.getElementsByClassName("drag-and-drop");
 
     //要素内のクリックされた位置を取得するグローバル（のような）変数
