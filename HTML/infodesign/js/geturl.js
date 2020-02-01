@@ -24,6 +24,8 @@ document.getElementById("addlinkbutton").addEventListener("click", function() {
   // wrapper.appendChild(link).appendChild(url);
   //wrapper直下に追加する短縮記述。できない
   // document.getElementById('wrapper').appendChild(link).appendChild(url);
+  //wrapper直下に追加する短縮記述。できない
+  // document.getElementById('wrapper').outerHTML.appendChild(link).appendChild(url);
 
   //追加したカテゴリに対してもドラッグアンドドロップできるようにする
   (function(){
