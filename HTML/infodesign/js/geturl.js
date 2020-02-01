@@ -17,7 +17,13 @@ document.getElementById("addlinkbutton").addEventListener("click", function() {
   link.addEventListener('click', function(){
     link.contentEditable='true';
     });
+  //body直下に追加する
   document.body.appendChild(link).appendChild(url);
+  //wrapper直下に追加するフル記述。できない
+  // var wrapper = document.getElementById("wrapper");
+  // wrapper.appendChild(link).appendChild(url);
+  //wrapper直下に追加する短縮記述。できない
+  // document.getElementById('wrapper').appendChild(link).appendChild(url);
 
   //追加したカテゴリに対してもドラッグアンドドロップできるようにする
   (function(){
@@ -100,6 +106,7 @@ document.getElementById("addlinkbutton").addEventListener("click", function() {
     }
   })()
 });
+
 //カテゴリを追加する
 //addボタンを見つけ、リスナーを貼る
 document.getElementById("addbutton").addEventListener("click", function() {
