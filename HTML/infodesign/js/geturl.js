@@ -7,10 +7,10 @@ function showUrl(){
 //リンクを追加する
 //addlinkボタンを見つけ、リスナーを貼る
 document.getElementById("addlinkbutton").addEventListener("click", function() {
-  //リンクを描画するためのdivを作る
+  //変数categoryにリンクを描画するためのdivを作って格納する
   var category = document.createElement("div");
-  //リンクに名称をつけるための枠を作る
-  var text = document.createTextNode("link");
+  //変数urlにページのURLを格納する
+  var url= document.createTextNode(location.href);
   //円表現のクラスを付与
   category.classList.add('circle');
   category.classList.add('c2');
@@ -23,7 +23,7 @@ document.getElementById("addlinkbutton").addEventListener("click", function() {
   category.addEventListener('click', function(){
   category.contentEditable='true';
   });
-  document.body.appendChild(category).appendChild(text);
+  document.body.appendChild(category).appendChild(url);
 
   //追加したカテゴリに対してもドラッグアンドドロップできるようにする
   (function(){
