@@ -7,23 +7,23 @@ function showUrl(){
 //リンクを追加する
 //addlinkボタンを見つけ、リスナーを貼る
 document.getElementById("addlinkbutton").addEventListener("click", function() {
-  //変数categoryにリンクを描画するためのdivを作って格納する
-  var category = document.createElement("div");
+  //変数linkにリンクを描画するためのdivを作って格納する
+  var link = document.createElement("div");
   //変数urlにページのURLを格納する
   var url= document.createTextNode(location.href);
   //円表現のクラスを付与
-  category.classList.add('circle');
-  category.classList.add('c2');
+  link.classList.add('linkcircle');
+  link.classList.add('c5');
   //ドラッグアンドドロップのためのクラスを付与
-  category.classList.add('drag-and-drop');
+  link.classList.add('drag-and-drop');
   //ドラッグのクラスを付与
-  category.classList.add('drag');
+  link.classList.add('drag');
   /*save.jsが発動できるように、idを振る*/
-  category.setAttribute('id', 'editableContent');
-  category.addEventListener('click', function(){
-  category.contentEditable='true';
+  link.setAttribute('id', 'editableContent');
+  link.addEventListener('click', function(){
+  link.contentEditable='true';
   });
-  document.body.appendChild(category).appendChild(url);
+  document.body.appendChild(link).appendChild(url);
 
   //追加したカテゴリに対してもドラッグアンドドロップできるようにする
   (function(){
