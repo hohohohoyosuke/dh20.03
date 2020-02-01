@@ -1,9 +1,3 @@
-//URLを取得する
-function showUrl(){
-  var url= location.href;
-  console.log(url);
-}
-
 //リンクを追加する
 //addlinkボタンを見つけ、リスナーを貼る
 document.getElementById("addlinkbutton").addEventListener("click", function() {
