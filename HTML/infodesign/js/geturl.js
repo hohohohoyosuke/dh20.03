@@ -1,5 +1,7 @@
-//リンクを追加する
+
+  //リンクを追加する
 //addlinkボタンを見つけ、リスナーを貼る
+console.log(document.getElementById("addlinkbutton"));
 document.getElementById("addlinkbutton").addEventListener("click", function() {
   //変数linkにリンクを描画するためのdivを作って格納する
   var link = document.createElement("div");
@@ -18,12 +20,13 @@ document.getElementById("addlinkbutton").addEventListener("click", function() {
     link.contentEditable='true';
     });
   //body直下に追加する
-  document.body.appendChild(link).appendChild(url);
+  // document.body.appendChild(link).appendChild(url);
   //wrapper直下に追加するフル記述。できない
   // var wrapper = document.getElementById("wrapper");
   // wrapper.appendChild(link).appendChild(url);
   //wrapper直下に追加する短縮記述。できない
-  // document.getElementById('wrapper').appendChild(link).appendChild(url);
+  console.log(document.getElementById('wrapper'));
+  document.getElementById('wrapper').appendChild(link).appendChild(url);
   //wrapper直下に追加する短縮記述。できない
   // document.getElementById('wrapper').outerHTML.appendChild(link).appendChild(url);
 
