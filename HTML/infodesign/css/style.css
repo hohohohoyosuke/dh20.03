@@ -74,7 +74,7 @@ a:active {
   width: 64px;
   height: 64px;
 }
-a {
+a, .linktext {
   color: #fff;
 }
 .drag-and-drop {
