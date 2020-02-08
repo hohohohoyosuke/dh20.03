@@ -1,6 +1,4 @@
-/**
- * localstorageに編集内容を保存する
-*/
+/*localstorageに編集内容を保存する*/
 //idを格納する変数を宣言
 var thisId = "";
 
@@ -32,15 +30,11 @@ if(localStorage.getItem("editableContent")){
 //最後に変数addContentsの内容をid"wrapper"の中身に追加
 document.getElementById("wrapper").outerHTML = addContents;
 
-/**
- * 中身を編集する
- */
+/*中身を編集する*/
 // localstorageの中身を描画させてから（画面に要素が揃ってから）処理を始める
 window.onload = function() {
 
-  /**
-   * リンクを追加する
-   */
+  /*リンクを追加する*/
   //addlinkボタンを見つけ、リスナーを貼る
   document.getElementById("addlinkbutton").addEventListener("click", function() {
     //変数linkにリンクを描画するためのdivを作って格納する
@@ -144,9 +138,7 @@ window.onload = function() {
     })()
   });//document.getElementById("addlinkbutton").addEventListener終わり
 
-  /**
-   * カテゴリを追加する
-   */
+  /*カテゴリを追加する*/
   //addボタンを見つけ、リスナーを貼る
   document.getElementById("addbutton").addEventListener("click", function() {
     //変数categoryにdivを作って格納する
@@ -233,7 +225,7 @@ window.onload = function() {
         document.body.addEventListener("mouseleave", mup, false);
         drag.addEventListener("touchend", mup, false);
         document.body.addEventListener("touchleave", mup, false);
-      }
+      }//function mmove(e)終わり
 
       //マウスボタンが上がったら発火
       function mup(e) {
@@ -249,7 +241,7 @@ window.onload = function() {
           drag.classList.remove("drag");
       }//function mup(e)終わり
     })()//(function()終わり
-  });//document.getElementById("addbutton").addEventListener("click", function() 終わり
-}//window.onload = function()終わり
+  });
+}
 
 
