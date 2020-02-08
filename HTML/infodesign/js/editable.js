@@ -32,12 +32,16 @@ if(localStorage.getItem("editableContent")){
 //最後に変数addContentsの内容をid"wrapper"の中身に追加
 document.getElementById("wrapper").outerHTML = addContents;
 
-
+/**
+ * 中身を編集する
+ */
+// localstorageの中身を描画させてから（画面に要素が揃ってから）処理を始める
 window.onload = function() {
 
-    //リンクを追加する
+  /**
+   * リンクを追加する
+   */
   //addlinkボタンを見つけ、リスナーを貼る
-  //console.log(document.getElementById("addlinkbutton"));
   document.getElementById("addlinkbutton").addEventListener("click", function() {
     //変数linkにリンクを描画するためのdivを作って格納する
     var link = document.createElement("div");
@@ -55,18 +59,10 @@ window.onload = function() {
     link.addEventListener('click', function(){
       link.contentEditable='true';
       });
-    //body直下に追加する
-    // document.body.appendChild(link).appendChild(url);
-    //wrapper直下に追加するフル記述。できない
-    // var wrapper = document.getElementById("wrapper");
-    // wrapper.appendChild(link).appendChild(url);
-    //wrapper直下に追加する短縮記述。できない
-    console.log(document.getElementById('editableContent'));
+    //editorbleContent直下に追加する
     document.getElementById('editableContent').appendChild(link).appendChild(url);
-    //wrapper直下に追加する短縮記述。できない
-    // document.getElementById('wrapper').outerHTML.appendChild(link).appendChild(url);
 
-    //追加したカテゴリに対してもドラッグアンドドロップできるようにする
+    //追加した要素に対し、ドラッグアンドドロップできるようにする
     (function(){
 
       // 要素の取得
@@ -146,9 +142,11 @@ window.onload = function() {
         drag.classList.remove("drag");
       }
     })()
-  });
+  });//document.getElementById("addlinkbutton").addEventListener終わり
 
-  //カテゴリを追加する
+  /**
+   * カテゴリを追加する
+   */
   //addボタンを見つけ、リスナーを貼る
   document.getElementById("addbutton").addEventListener("click", function() {
     //変数categoryにdivを作って格納する
@@ -162,14 +160,17 @@ window.onload = function() {
     category.classList.add('drag-and-drop');
     //ドラッグのクラスを付与
     category.classList.add('drag');
-    /*save.jsが発動できるように、idを振る*/
+    //localstorageに保存する関数が発動できるように、idを振る
     category.setAttribute('id', 'editableContent');
     category.addEventListener('click', function(){
         category.contentEditable='true';
       });
-    document.body.appendChild(category).appendChild(text);
+    //body直下に追加
+    //document.body.appendChild(category).appendChild(text);
+    //editableContent直下に追加
+    document.getElementById('editableContent').appendChild(category).appendChild(text);
 
-    //追加したカテゴリに対してもドラッグアンドドロップできるようにする
+    //追加した要素に対し、ドラッグアンドドロップできるようにする
     (function(){
 
       //要素の取得
@@ -246,9 +247,9 @@ window.onload = function() {
 
         //クラス名 .drag も消す
           drag.classList.remove("drag");
-      }
-    })()
-  });
-}
+      }//function mup(e)終わり
+    })()//(function()終わり
+  });//document.getElementById("addbutton").addEventListener("click", function() 終わり
+}//window.onload = function()終わり
 
 
