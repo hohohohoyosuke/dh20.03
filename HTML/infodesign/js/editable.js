@@ -39,6 +39,8 @@ window.onload = function() {
   document.getElementById("addlinkbutton").addEventListener("click", function() {
     //変数linkにリンクを描画するためのdivを作って格納する
     var link = document.createElement("div");
+    //変数titleにページのタイトルを格納する
+    var title = document.createTextNode(document.title);
     //変数urlにページのURLを格納する
     var url= document.createTextNode(location.href);
     //円表現のクラスを付与
@@ -54,7 +56,9 @@ window.onload = function() {
       link.contentEditable='true';
       });
     //editorbleContent直下に追加する
-    document.getElementById('editableContent').appendChild(link).appendChild(url);
+    document.getElementById('editableContent').appendChild(link).appendChild(title);
+    //urlを描画する
+    //document.getElementById('editableContent').appendChild(link).appendChild(url);
 
     //追加した要素に対し、ドラッグアンドドロップできるようにする
     (function(){
