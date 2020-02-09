@@ -10,15 +10,11 @@
       "default_popup": "index.html",
       "default_icon": "icon-infomap.png"
     },
+    "options_page": "options.html",
     "content_scripts": [
       {
-        "matches": [
-          "https://*",
-          "http://*",
-          "file://*",
-          "file:///Users/emp-mac-hoshi/GoogleDrive%20hohohoho.yosuke/InfoMap/dh20.03/HTML/infodesign/index.html",
-          "chrome://extensions/"
-        ]
+        "matches": [ "http://*/*", "https://*/*", "file://*" ],
+        "js": [ "js/content_script.js" ]
       }
     ],
     "commands": {
