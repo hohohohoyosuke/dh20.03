@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>edit and save</title>
+  <link type="text/css" rel="stylesheet" href="./css/reset.css">
+  <link type="text/css" rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div id="wrapper"></div>
+  <style>/*
+  <!--この記述をlocalstorageに書く-->
+  <div id="editableContent" contenteditable="true" oninput="onInput();">
+    <!--カテゴリとリンクをくくる枠-->
+    <div class="category_outer">
+      <!--カテゴリの丸-->
+      <div class="category">
+        <!--カテゴリ名称-->
+        <div class="category_name">
+          <p>情報<br>デザイン</p>
+        </div>
+      </div>
+      <div class="link">
+        <div class="link_name">
+          <p><i src="./img/"></i><a href="https://infodesign.amebaownd.com/" target="_blank">INFO DESIGN</a></p>
+        </div>
+      </div>
+    </div>
+    <div contenteditable="false">
+      <!--リンクAddボタン-->
+      <div id="addlinkbutton" class="addlinkbutton">Add<br>link</div>
+      <!--カテゴリAddボタン-->
+      <div id="addcategorybutton" class="addbutton">Add<br>Caterogy</div>
+    </div>
+  </div>
+  <!--/この記述をlocalstorageに書く-->
+  */</style>
+  <script type="text/javascript" src="js/editable.js"></script>
+  <!-- <script type="text/javascript" src="js/geturl.js"></script> -->
+  <script>// localStorageに保存されているkey名'foo'の値を取得する場合
+    chrome.runtime.sendMessage({method: 'getItem', key: 'foo'}, function (response) {
+      if (response.data) {
+        console.log(response.data);
+      }
+    });
+    
+    // localStorageにkey名'baa'として値2を保存する場合
+    chrome.runtime.sendMessage({method: 'setItem', key: 'foo', value: 2});
+    
+    // localStorageのkey名'foo'の値を削除する場合
+    chrome.runtime.sendMessage({method: 'removeItem', key: 'foo'});</script>
+</body>
+</html>

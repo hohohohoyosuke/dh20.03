@@ -1,0 +1,34 @@
+  {
+    "name": "infomap",
+    "description" : "information mapping and bookmark ",
+    "version": "1.0",
+    "manifest_version": 2,
+    "background": {
+      "scripts": ["js/background.js"]
+    },
+    "browser_action": {
+      "default_popup": "index.html",
+      "default_icon": "icon-infomap.png"
+    },
+    "content_scripts": [
+      {
+        "matches": [
+          "https://*",
+          "http://*",
+          "file://*",
+          "file:///Users/emp-mac-hoshi/GoogleDrive%20hohohoho.yosuke/InfoMap/dh20.03/HTML/infodesign/index.html",
+          "chrome://extensions/"
+        ]
+      }
+    ],
+    "commands": {
+      "_execute_browser_action": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+F",
+          "mac": "MacCtrl+Shift+F"
+        },
+        "description": "20200209"
+      }
+    }
+  
+  }
