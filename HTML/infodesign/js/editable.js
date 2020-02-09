@@ -46,6 +46,8 @@ window.onload = function() {
     var title = document.createTextNode(document.title);
     //変数urlにページのURLを格納する
     var url= document.createTextNode(location.href);
+    //変数faviconにファビコンを格納する（仕掛かり中。URLまでは取れてる）
+    var favicon = document.createTextNode('http://www.google.com/s2/favicons?domain=' + location.href)
     //円表現のクラスを付与
     //link.classList.add('linkcircle');
     //link.classList.add('c5');
