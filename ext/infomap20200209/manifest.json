@@ -20,11 +20,6 @@
       "default_popup": "popup.html",
       "default_icon": "icon-infomap.png"
     },
-    
-    "content_scripts": [{
-        "matches": [ "http://*/*", "https://*/*", "file://*/*" ],
-        "js": [ "js/content_script.js" ]
-    }],
 
     "commands": {
       "_execute_browser_action": {
