@@ -35,19 +35,8 @@
   </div>
   <!--/この記述をlocalstorageに書く-->
   */</style>
+  <script type="text/javascript" src="js/background.js"></script>
+  <script type="text/javascript" src="js/content_script.js"></script>
   <script type="text/javascript" src="js/editable.js"></script>
-  <!-- <script type="text/javascript" src="js/geturl.js"></script> -->
-  <script>// localStorageに保存されているkey名'foo'の値を取得する場合
-    chrome.runtime.sendMessage({method: 'getItem', key: 'foo'}, function (response) {
-      if (response.data) {
-        console.log(response.data);
-      }
-    });
-    
-    // localStorageにkey名'baa'として値2を保存する場合
-    chrome.runtime.sendMessage({method: 'setItem', key: 'foo', value: 2});
-    
-    // localStorageのkey名'foo'の値を削除する場合
-    chrome.runtime.sendMessage({method: 'removeItem', key: 'foo'});</script>
 </body>
 </html>

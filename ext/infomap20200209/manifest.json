@@ -3,31 +3,28 @@
     "description" : "information mapping and bookmark ",
     "version": "1.0",
     "manifest_version": 2,
+
     "background": {
-      "scripts": ["js/background.js"]
-    },
-    // "browser_action": {
-    //   "default_popup": "index.html",
-    //   "default_icon": "icon-infomap.png"
-    // },
-    // "options_page": "options.html",
-    // "content_scripts": [
-    //   {
-    //     "matches": [ "http://*/*", "https://*/*", "file://*" ],
-    //     "js": [ "js/content_script.js" ]
-    //   }
-    // ],
-
-    "page_action": {
-      "browser_style": true,
-      "default_icon": {
-        "19": "icon-infomap.png",
-        "38": "icon-infomap.png"
-      },
-      "default_title": "Whereami?",
-      "default_popup": "index.html"
+      "scripts": ["js/background.js"],
+      "persistent": true
     },
 
+    "permissions": [
+      "storage",
+      "unlimitedStorage",
+      "http://*/*",
+      "https://*/*"
+    ],
+    
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon-infomap.png"
+    },
+    
+    "content_scripts": [{
+        "matches": [ "http://*/*", "https://*/*", "file://*/*" ],
+        "js": [ "js/content_script.js" ]
+    }],
 
     "commands": {
       "_execute_browser_action": {

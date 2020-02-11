@@ -1,6 +1,7 @@
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
-  if (request.method == "getLocalStorage")
-    sendResponse({data: localStorage[request.key]});
-  else
-    sendResponse({}); // snub them.
+  if (request.method == "getUser"){
+    sendResponse({user_id: localStorage[request.user_id]});
+  }else{
+    sendResponse({});
+  }
 });
