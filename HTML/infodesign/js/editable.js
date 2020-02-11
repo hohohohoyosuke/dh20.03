@@ -255,6 +255,3 @@ window.onload = function() {
   });
 }
 
-
-var valueOfLocalStorage = localStorage['editorbleContent'];
-console.log(valueOfLocalStorage);
