@@ -9,6 +9,16 @@
       "persistent": true
     },
 
+    "content_scripts": [
+      {
+        "matches": [
+          "https://*/*",
+          "http://*/*"
+        ],
+        "js": ["js/content_script.js"]
+      }
+    ],
+
     "permissions": [
       "storage",
       "unlimitedStorage",

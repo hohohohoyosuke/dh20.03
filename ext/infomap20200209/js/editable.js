@@ -255,4 +255,9 @@ window.onload = function() {
   });
 }
 
+//localStorageへの保存の確認
+// key名'foo'に3を保存
+localStorage.bar = 3;
 
+// key名'foo'の値を取得
+console.log(localStorage.bar); // => 3
