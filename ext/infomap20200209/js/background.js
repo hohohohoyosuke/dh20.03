@@ -18,7 +18,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     case 'removeItem': // 指定されたkeyの値を削除
       sendResponse({data: localStorage.removeItem[request.key]});
       break;
-    case 'clearAll': //　すべてのデータを削除
+    case 'clearAll': // すべてのデータを削除
       sendResponse({data: localStorage.clear()});
       break;
     default:
