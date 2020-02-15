@@ -27,7 +27,7 @@ if(localStorage.getItem("editableContent")){
     //元記述
     //addContents += '<div id="editableContent" contenteditable="true" onInput="onInput();">編集可能コンテンツ</div>';
     //addボタンとかもいれた
-    addContents += '<div id="editableContent" contenteditable="true" oninput="onInput();"><div class="category_outer"><div class="category"><div class="category_name"><p>情報<br>デザイン</p></div></div><div class="link"><div class="link_name"><p><i src="./img/"></i><a href="https://infodesign.amebaownd.com/" target="_blank">INFO DESIGN</a></p></div></div></div><div contenteditable="false"><div id="addlinkbutton" class="addlinkbutton">Add<br>link</div><div id="addcategorybutton" class="addbutton">Add<br>Caterogy</div></div></div>';
+    addContents += '<div id="editableContent" contenteditable="true" oninput="onInput();"><div class="category_outer"><div class="category"><div class="category_name"><p>情報<br>デザイン</p></div></div><div class="link"><div class="link_name"><p><i src="./img/"></i><a href="https://infodesign.amebaownd.com/" target="_blank">INFO DESIGN</a></p></div></div></div><div contenteditable="false"><div id="addlinkbutton" class="addlinkbutton">Add<br>link</div><div id="addcategorybutton" class="addcategorybutton">Add<br>Caterogy</div></div></div>';
 
 }
 
@@ -155,7 +155,7 @@ window.onload = function() {
 
   /*カテゴリを追加する*/
   //addボタンを見つけ、リスナーを貼る
-  document.getElementById("addbutton").addEventListener("click", function() {
+  document.getElementById("addcategorybutton").addEventListener("click", function() {
     //変数categoryにdivを作って格納する
     var category = document.createElement("div");
     //変数textにデフォルト値を指定して格納する
