@@ -32,7 +32,10 @@ if(localStorage.getItem("editableContent")){
           </div>\
         </div>\
         <div class="link">\
-          <div class="link_name"><p><i src="./img/"></i><a href="https://infodesign.amebaownd.com/" target="_blank">INFO DESIGN</a></p>\
+          <div class="link_name">\
+            <p><i src="./img/"></i>\
+              <a href="https://infodesign.amebaownd.com/" target="_blank">INFO DESIGN</a>\
+            </p>\
           </div>\
         </div>\
       </div>\
