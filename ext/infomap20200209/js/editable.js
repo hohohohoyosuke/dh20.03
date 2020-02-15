@@ -64,12 +64,12 @@ window.onload = function() {
     //変数linkにリンクを描画するためのaタグを作って格納する
     var link = document.createElement('a');
     
-    //変数titleにページのタイトルを格納する
+    //変数titleにページのタイトルを格納する(現状、popup.htmlのタイトルが取れちゃってる)
     var title = document.createTextNode(document.title);
-    //変数urlにページのURLを格納する
+    //変数urlにページのURLを格納する(現状、popup.htmlのurlが取れちゃってる)
     var url= document.createTextNode(location.href);
-    //変数faviconにファビコンを格納する（仕掛かり中。URLまでは取れてる）
-    var favicon = document.createTextNode('http://www.google.com/s2/favicons?domain=' + location.href)
+    //変数faviconにファビコンを格納する（仕掛かり中。連結まではできた。URLが正しく取れればいけるか。）
+    var favicon = document.createTextNode('http://www.google.com/s2/favicons?domain=' + location.href);
     //円表現のクラスを付与
     //link.classList.add('linkcircle');
     //link.classList.add('c5');
@@ -85,7 +85,7 @@ window.onload = function() {
       link.contentEditable='true';
       });
     //editableContent>link直下にtitleを追加する
-    document.getElementById('editableContent').appendChild(link).appendChild(title);
+    document.getElementById('editableContent').appendChild(link).appendChild(url);
     //urlを描画する
     //document.getElementById('editableContent').appendChild(link).appendChild(url);
 
