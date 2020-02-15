@@ -5,39 +5,16 @@
   <!-- content security polocyを設定するトライ <meta http-equiv="Content-Security-Policy" content="default-src https:; script-src https: 'unsafe-inline'; style-src https: 'unsafe-inline'"> -->
   <!-- CSPをchrome:に対して設定するトライ -->
   <!-- <meta http-equiv="Content-Security-Policy" content="default-src chrome:; script-src chrome: 'unsafe-inline'; style-src chrome: 'unsafe-inline'"> -->
+  <!-- https://www.pupha.net/archives/3383/を参考にしたトライ -->
+  <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'unsafe-inline'"> -->
+  <!-- 同一オリジンのみ許可し、unsafeを追加するトライ -->
+  <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src chrome: 'unsafe-inline'"> -->
   <title>edit and save</title>
   <link type="text/css" rel="stylesheet" href="./css/reset.css">
   <link type="text/css" rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <div id="wrapper"></div>
-  <style>/*
-  <!--この記述をlocalstorageに書く-->
-  <div id="editableContent" contenteditable="true" oninput="onInput();">
-    <!--カテゴリとリンクをくくる枠-->
-    <div class="category_outer">
-      <!--カテゴリの丸-->
-      <div class="category">
-        <!--カテゴリ名称-->
-        <div class="category_name">
-          <p>情報<br>デザイン</p>
-        </div>
-      </div>
-      <div class="link">
-        <div class="link_name">
-          <p><i src="./img/"></i><a href="https://infodesign.amebaownd.com/" target="_blank">INFO DESIGN</a></p>
-        </div>
-      </div>
-    </div>
-    <div contenteditable="false">
-      <!--リンクAddボタン-->
-      <div id="addlinkbutton" class="addlinkbutton">Add<br>link</div>
-      <!--カテゴリAddボタン-->
-      <div id="addcategorybutton" class="addcategorybutton">Add<br>Caterogy</div>
-    </div>
-  </div>
-  <!--/この記述をlocalstorageに書く-->
-  */</style>
   <script src="js/editable.js"></script>
   <script src="js/content_script.js"></script>
 </body>
