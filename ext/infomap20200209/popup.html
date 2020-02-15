@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <!-- content security polocyを設定するトライ <meta http-equiv="Content-Security-Policy" content="default-src https:; script-src https: 'unsafe-inline'; style-src https: 'unsafe-inline'"> -->
+  <!-- CSPをchrome:に対して設定するトライ -->
+  <meta http-equiv="Content-Security-Policy" content="default-src chrome:; script-src chrome: 'unsafe-inline'; style-src chrome: 'unsafe-inline'; script-src-elem chrome: 'unsafe-inline'; ">
   <title>edit and save</title>
   <link type="text/css" rel="stylesheet" href="./css/reset.css">
   <link type="text/css" rel="stylesheet" href="./css/style.css">
@@ -36,7 +38,7 @@
   </div>
   <!--/この記述をlocalstorageに書く-->
   */</style>
-  <script type="text/javascript" src="js/editable.js"></script>
-  <script type="text/javascript" src="js/content_script.js"></script>
+  <script src="js/editable.js"></script>
+  <script src="js/content_script.js"></script>
 </body>
 </html>
