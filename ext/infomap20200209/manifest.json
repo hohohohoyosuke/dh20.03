@@ -23,7 +23,10 @@
       "storage",
       "unlimitedStorage",
       "http://*/*",
-      "https://*/*"
+      "https://*/*",
+      "tabs",
+      "activeTab",
+      "bookmarks"
     ],
     
     "browser_action": {
