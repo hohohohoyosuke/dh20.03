@@ -1,0 +1,26 @@
+<!--この記述をlocalstorageのkey=editableContentのvalueに書く-->
+<div id="editableContent" contenteditable="true" oninput="onInput();">
+  <!--カテゴリとリンクをくくる枠-->
+  <div class="category_outer">
+    <!--カテゴリの丸-->
+    <div class="category">
+      <!--カテゴリ名称-->
+      <div class="category_name">
+        <p>情報<br>デザイン</p>
+      </div>
+    </div>
+    <div class="link">
+      <div class="link_name">
+        <p><i src="./img/"></i><a href="https://infodesign.amebaownd.com/" target="_blank">INFO DESIGN</a></p>
+      </div>
+    </div>
+  </div>
+  <div contenteditable="false">
+    <!--リンクAddボタン-->
+    <div id="addlinkbutton" class="addlinkbutton">Add<br>link</div>
+    <!--カテゴリAddボタン-->
+    <div id="addcategorybutton" class="addcategorybutton">Add<br>Caterogy</div>
+  </div>
+</div>
+<!--/この記述をlocalstorageのkey=editableContentのvalueに書く-->
+

@@ -1,0 +1,162 @@
+@charset "UTF-8";
+/*全体*/
+body {
+  background-color: #305692;
+  width: 800px;
+  height: 800px;
+}
+a {
+  color: #fff;
+}
+a:visited {
+  color: #ddd;
+}
+a:hover {
+  color: #eee;
+}
+a:active {
+  color:#ddd;
+}
+
+/*カテゴリの丸とリンクの全体を囲うエリア*/
+.category_outer {
+  width: 400px;
+  padding: 8px;
+}
+/*カテゴリ*/
+.category {
+  display: inline-flex; /* 横並びにする */
+ }
+.category_name {
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  color: #2C4C84;
+  background-color: #CEDDF7;
+  border-radius: 40px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center; /* 縦方向中央揃え（Safari用） */
+  align-items: center; /* 縦方向中央揃え */
+  -webkit-justify-content: center; /* 横方向中央揃え（Safari用） */
+  justify-content: center; /* 横方向中央揃え */
+ }
+ /*リンク*/
+.link {
+  display: inline-flex;
+  padding: 8px 8px 0 8px;
+}
+.link_name {
+  padding: 0 0 8px 0;
+}
+
+/*Addボタン*/
+.circle {
+  background-color: #ceddf7;
+  color: #2c4c84;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 8px;
+}
+.c1 {
+  font-size: 20px;
+  width: 120px;
+  height: 120px;
+}
+.c2 {
+  font-size: 17px;
+  width: 80px;
+  height: 80px;
+}
+.c3 {
+  font-size: 12px;
+  width: 64px;
+  height: 64px;
+}
+a, .linktext {
+  color: #fff;
+}
+.drag-and-drop {
+    cursor: move;
+    position: absolute;
+    z-index: 1000;
+}
+.drag {
+    z-index: 1001;
+}
+.editbutton {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  top: 80%;
+  left: 90%;
+  cursor: pointer;
+}
+.addcategorybutton {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  top: 65%;
+  left: 90%;
+  cursor: pointer;
+}
+.hide {
+  display: none;
+}
+.addedarea {
+  top: 10%;
+  left: 90%;
+}
+
+/*Addlinkボタン*/
+.addlinkbutton {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  top: 80%;
+  left: 90%;
+  cursor: pointer;
+}
+.linkcircle {
+  background-color: #ceddf7;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin: 8px;
+}
+.c4 {
+  font-size: 12px;
+  width: 40px;
+  height: 40px;
+}
+.c5 {
+  font-size: 12px;
+  width: 32px;
+  height: 32px;
+}

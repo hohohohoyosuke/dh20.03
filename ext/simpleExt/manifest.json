@@ -1,0 +1,22 @@
+  {
+    "name": "bookmark-MAP",
+    "description" : "mapping of bookmarks",
+    "version": "1.0",
+    "manifest_version": 2,
+
+
+    "permissions": [
+      "storage",
+      "unlimitedStorage",
+      "http://*/*",
+      "https://*/*",
+      "tabs",
+      "activeTab",
+      "bookmarks"
+    ],
+    
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon-infomap.png"
+    }
+  }
