@@ -8,7 +8,7 @@ chrome.runtime.sendMessage({method: 'getItem', key: 'foo'}, function (response) 
   }
 });
 
-// localStorageにkey名'baa'として値2を保存する場合
+// localStorageにkey名'foo'として値2を保存する場合
 chrome.runtime.sendMessage({method: 'setItem', key: 'foo', value: 2});
 
 // localStorageのkey名'foo'の値を削除する場合

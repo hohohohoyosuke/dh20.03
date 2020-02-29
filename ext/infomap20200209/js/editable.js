@@ -83,7 +83,7 @@ window.onload = function() {
       var url2 = document.createTextNode(tab.url);
       console.log(url2);
 
-      
+
       //円表現のクラスを付与
       //link.classList.add('linkcircle');
       //link.classList.add('c5');
@@ -295,8 +295,8 @@ window.onload = function() {
 }
 
 //localStorageへの保存の確認
-// key名'foo'に3を保存
+// key名'bar'に3を保存
 localStorage.bar = 3;
 
-// key名'foo'の値を取得
+// key名'bar'の値を取得
 console.log(localStorage.bar); // => 3
