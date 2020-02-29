@@ -74,7 +74,9 @@ window.onload = function() {
     var faketitle = document.createTextNode('都内で朝早くからやってる本屋');
     //タブの情報を取得する
     //参考：https://developer.mozilla.org/ja/docs/Mozilla/Add-ons/WebExtensions/manifest.json/permissions
-    var tabTitle = document.createTextNode(Tab.title)
+
+    console.log(Tab.title);
+    var tabTitle = document.createTextNode(Tab.title);
 
     //円表現のクラスを付与
     //link.classList.add('linkcircle');
@@ -91,7 +93,7 @@ window.onload = function() {
       link.contentEditable='true';
       });
     //editableContent>link直下にtitleを追加する
-    document.getElementById('editableContent').appendChild(link).appendChild(tabTitle);
+    document.getElementById('editableContent').appendChild(link).appendChild(faketitle);
     //urlを描画する
     //document.getElementById('editableContent').appendChild(link).appendChild(url);
 
