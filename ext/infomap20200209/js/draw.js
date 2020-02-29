@@ -2,12 +2,12 @@
 /*コンテンツを描画する*/
 
 //追加する先である、"editableContent"のidを変数targetに格納
-var target = document.getElementById("editableContent");
+//var target = document.getElementById("editableContent");
 
 //HTMLに追加する内容を格納する変数を宣言
 let addContents = "";
 
-//localStorageにコンテンツの内容が保存されているか確認をして、処理を分岐させることでエラーを回避
+//localStorageにコンテンツの内容が保存されているか確認をして、処理を分岐させる
 if(localStorage.getItem("editableContent")){
     //localStorageから、保存したコンテンツ(キーはeditableContent)を取得し、変数addContentsに追加
     addContents += localStorage.getItem("editableContent");
@@ -38,3 +38,8 @@ if(localStorage.getItem("editableContent")){
     ';
 }
 
+//変数addContentsの内容をid"wrapper"の中身に追加
+//document.getElementById("wrapper").innerHTML = addContents;
+//変数使って分割記述
+var page = document.getElementById("wrapper");
+page.innerHTML = addContents;
