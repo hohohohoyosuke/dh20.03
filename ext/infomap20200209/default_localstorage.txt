@@ -1,5 +1,5 @@
 <!--この記述をlocalstorageのkey=editableContentのvalueに書く-->
-<div id="editableContent" contenteditable="true" oninput="onInput();">
+<div id="editableContent" contenteditable="true">
   <!--カテゴリとリンクをくくる枠-->
   <div class="category_outer">
     <!--カテゴリの丸-->

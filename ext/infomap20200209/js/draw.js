@@ -2,7 +2,7 @@
 /*コンテンツを描画する*/
 
 //HTMLに追加する内容を格納する変数を宣言
-let addContents = "";
+var addContents = "";
 
 //localStorageにコンテンツの内容が保存されているか確認をして、処理を分岐させる
 if(localStorage.getItem("editableContent")){
@@ -10,11 +10,12 @@ if(localStorage.getItem("editableContent")){
     addContents += localStorage.getItem("editableContent");
 } else {
     //localStorageに保存したコンテンツがない場合は、デフォルトの内容を変数addContentsに追加
+    
     addContents += '\
-      <div id="editableContent" contenteditable="true" oninput="onInput();">\
+      <div id="editableContent" contenteditable="true">\
         <div class="category_outer">\
           <div class="category">\
-            <div class="category_name"><p>情報<br>デザイン</p>\
+            <div class="category_name"><p>情報<br>デザイ ン</p>\
             </div>\
           </div>\
           <div class="link">\
@@ -35,8 +36,3 @@ if(localStorage.getItem("editableContent")){
     ';
 }
 
-//変数addContentsの内容をid"wrapper"の中身に追加
-//document.getElementById("wrapper").innerHTML = addContents;
-//変数使って分割記述
-var page = document.getElementById("wrapper");
-page.innerHTML = addContents;
