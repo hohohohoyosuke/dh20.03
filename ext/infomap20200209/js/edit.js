@@ -222,7 +222,7 @@ window.onload = function() {
         document.body.addEventListener("touchleave", mup, false);
       }//function mmove(e)終わり
 
-      /*エラー起きるのでコメントアウト
+      
       //マウスボタンが上がったら発火
       function mup(e) {
         var drag = document.getElementsByClassName("drag")[0];
@@ -236,7 +236,6 @@ window.onload = function() {
         //クラス名 .drag も消す
           drag.classList.remove("drag");
       }//function mup(e)終わり
-      */
     })()//(function()終わり
   });
 }
