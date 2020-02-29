@@ -14,12 +14,12 @@
         <p><i src="./img/"></i><a href="https://infodesign.amebaownd.com/" target="_blank">INFO DESIGN</a></p>
       </div>
     </div>
-  </div>
-  <div contenteditable="false">
-    <!--リンクAddボタン-->
-    <div id="addlinkbutton" class="addlinkbutton">Add<br>link</div>
-    <!--カテゴリAddボタン-->
-    <div id="addcategorybutton" class="addcategorybutton">Add<br>Caterogy</div>
+    <div contenteditable="false">
+      <!--リンクAddボタン-->
+      <div id="addlinkbutton" class="addlinkbutton">Add<br>link</div>
+      <!--カテゴリAddボタン-->
+      <div id="addcategorybutton" class="addcategorybutton">Add<br>Caterogy</div>
+    </div>
   </div>
 </div>
 <!--/この記述をlocalstorageのkey=editableContentのvalueに書く-->

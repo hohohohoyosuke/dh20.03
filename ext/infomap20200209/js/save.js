@@ -18,7 +18,7 @@ function onInput(){
 //編集された都度、内容をlocalStorageに保存する関数
 function onInput(){
   //編集中のHTML要素の内容を変数latestContentに格納
-  const latestContent = document.getElementById('editableContent').outerHTML;
+  var latestContent = document.getElementById('editableContent').outerHTML;
   //変数latestContentの値をlocalStorageに保存。keyは変数thisId
   localStorage.setItem('editableContent', latestContent);
 }
