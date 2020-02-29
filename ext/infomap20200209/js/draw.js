@@ -28,7 +28,7 @@ if(localStorage.getItem("editableContent")){
           <div contenteditable="false">\
             <div id="addlinkbutton" class="addlinkbutton">Add<br>link\
             </div>\
-            <div id="addcategorybutton" class="addcategorybutton">Add<br>Caterogy\
+            <div id="savebutton" class="addcategorybutton">Save\
             </div>\
           </div>\
         </div>\

@@ -1,12 +1,19 @@
 
 /*localstorageに編集内容を保存する*/
 
-//編集された都度、内容をlocalStorageに保存する関数
-function onInput(){
+//
+
+window.addEventListener('load', (event) => {
+  document.getElementById("savebutton").addEventListener("click", saveToLocalStorage, false);
+  console.log(document.getElementById("savebutton"));
+});
+
+//HTMLをlocalStorageに保存する関数
+function saveToLocalStorage(){
   //編集中のHTML要素の内容を変数latestContentに格納
-  //var latestContent = document.getElementById('editableContent').outerHTML;
+  var latestContent = document.getElementById('editableContent').outerHTML;
   //変数latestContentの値をlocalStorageに保存。keyは変数thisId
-  //localStorage.setItem('editableContent', latestContent);
+  localStorage.setItem('editableContent', latestContent);
 }
 
 

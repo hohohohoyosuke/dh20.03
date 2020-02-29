@@ -17,8 +17,8 @@
     <div contenteditable="false">
       <!--リンクAddボタン-->
       <div id="addlinkbutton" class="addlinkbutton">Add<br>link</div>
-      <!--カテゴリAddボタン-->
-      <div id="addcategorybutton" class="addcategorybutton">Add<br>Caterogy</div>
+      <!--保存ボタン-->
+      <div id="savebutton" class="addcategorybutton">Save</div>
     </div>
   </div>
 </div>
