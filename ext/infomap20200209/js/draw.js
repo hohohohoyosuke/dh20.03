@@ -1,9 +1,6 @@
 
 /*コンテンツを描画する*/
 
-//追加する先である、"editableContent"のidを変数targetに格納
-//var target = document.getElementById("editableContent");
-
 //HTMLに追加する内容を格納する変数を宣言
 let addContents = "";
 
