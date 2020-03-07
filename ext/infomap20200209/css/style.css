@@ -106,15 +106,15 @@ a, .linktext {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background-color: #fff;
-  color: #333;
+  background-color: #ceddf7;
+  color: #305692;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   position: absolute;
-  top: 65%;
-  left: 90%;
+  top: 61%;
+  left: 84%;
   cursor: pointer;
 }
 .hide {
@@ -127,18 +127,18 @@ a, .linktext {
 
 /*Addlinkボタン*/
 .addlinkbutton {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #fff;
-  color: #333;
+  width: 144px;
+  height: 44px;
+  border-radius: 3%;
+  background-color: #ceddf7;
+  color: #305692;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   position: absolute;
-  top: 80%;
-  left: 90%;
+  top: 78%;
+  left: 80%;
   cursor: pointer;
 }
 .linkcircle {
@@ -163,17 +163,17 @@ a, .linktext {
 
 
 .savebutton {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #fff;
-  color: #333;
+  width: 144px;
+  height: 44px;
+  border-radius: 3%;
+  background-color: #4285f4;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   position: absolute;
-  top: 90%;
-  left: 90%;
+  top: 89%;
+  left: 80%;
   cursor: pointer;
 }
