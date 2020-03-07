@@ -9,23 +9,23 @@ window.onload = function() {
     //変数linkにリンクを描画するためのdivを作って格納する
     //var link = document.createElement('div');
     //変数linkにリンクを描画するためのaタグを作って格納する
-    var link = document.createElement('a');
+    //var link = document.createElement('a');
     
     //変数faviconにファビコンを格納する（仕掛かり中。連結まではできた。URLが正しく取れればいけるか。）
     var favicon = document.createTextNode('http://www.google.com/s2/favicons?domain=' + location.href);
-    //デモ用
-    var faketitle = document.createTextNode('都内で朝早くからやってる本屋');
-
+    
     //参考：http://www.inashiro.com/2011/06/13/dev-chrome-extension-get-current-tab-url/
     //タブのURLを取得する
     chrome.tabs.getSelected(window.id, function (tab) {
       var title = document.createTextNode(tab.title);
-      var url = document.createTextNode(tab.url);
-      console.log(url);
+      var tabUrl = document.createTextNode(tab.url);
+      var favicon = document.createTextNode('http://www.google.com/s2/favicons?domain=' + tab.url);
+      console.log(tabUrl);
 
-
+      //変数linkにリンクを描画するためのaタグを作って格納する
+      var link = document.createElement('a');
       //リンクURLを付与
-      link.setAttribute('href', url);
+      link.setAttribute('href', tabUrl);
       //リンク文字列用のクラスを付与
       link.classList.add('linktext');
       //ドラッグアンドドロップのためのクラスを付与
@@ -38,11 +38,11 @@ window.onload = function() {
         link.contentEditable='true';
         });
       
+      //editableContent>link直下にfaviconを追加する
+      //document.getElementById('editableContent').appendChild(link).appendChild(favicon);
       //editableContent>link直下にtitleを追加する
       document.getElementById('editableContent').appendChild(link).appendChild(title);
-      document.getElementById('editableContent').appendChild(link).appendChild(url);
-      
-      //urlを描画する
+      //editableContent>link直下にURLを追加する
       //document.getElementById('editableContent').appendChild(link).appendChild(url);
     
       //追加した要素に対し、ドラッグアンドドロップできるようにする

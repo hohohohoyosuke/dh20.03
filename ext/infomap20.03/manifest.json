@@ -1,6 +1,6 @@
   {
-    "name": "infomap",
-    "description" : "information mapping and bookmark ",
+    "name": "BookMarkMap",
+    "description" : "Bookmark tool using map style",
     "version": "2.0",
     "manifest_version": 2,
 

@@ -1,9 +1,10 @@
 @charset "UTF-8";
 /*全体*/
 body {
-  background-color: #305692;
+  background-color: #2c4c84;
   width: 800px;
   height: 800px;
+  font-family: Helvetica, sans-serif;
 }
 a {
   color: #fff;
@@ -16,6 +17,24 @@ a:hover {
 }
 a:active {
   color:#ddd;
+}
+
+/*ツールタイトル*/
+.tool-title{
+  color: #ceddf7;
+  width: 100%;
+  padding: 4px 8px;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  background-color: #06204a;
+  bor
+}
+.title-capital{
+  font-size: 24px;
+}
+.title-base{
+  font-size: 16px;
 }
 
 /*カテゴリの丸とリンクの全体を囲うエリア*/
@@ -78,6 +97,7 @@ a:active {
 }
 a, .linktext {
   color: #fff;
+  padding: 16px;
 }
 .drag-and-drop {
     cursor: move;
@@ -107,7 +127,7 @@ a, .linktext {
   height: 80px;
   border-radius: 50%;
   background-color: #ceddf7;
-  color: #305692;
+  color: #2c4c84;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -131,7 +151,7 @@ a, .linktext {
   height: 44px;
   border-radius: 3%;
   background-color: #ceddf7;
-  color: #305692;
+  color: #2c4c84;
   display: flex;
   justify-content: center;
   align-items: center;
